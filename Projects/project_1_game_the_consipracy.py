@@ -28,6 +28,22 @@ def type_writer(text = "", colour = WHITE, speed = 0.03):
     sleep(0.5)
     # Print a blank line after displaying the entire input text
     print("\n")
+
+# class for the multiple choice structure
+# class question_prompts:
+#     def __init__(self, prompt, answer):
+#         self.prompt = prompt
+#         self.answer = answer
+
+
+# prompts = [
+#    
+
+# ]
+
+# questions = [
+
+# ]
     
 # The code block below pertains to the 1st scene: The Assassination by James. Subject to changes, text art etc. The code block above has not been modified
 
@@ -64,9 +80,9 @@ def start_game():
     print("\n\n")
     answer = input("")
 
-    if "1" in answer:
+    if answer == "1":
         jfk1_1()
-    elif "2" in answer:
+    elif answer == "2":
         jfk1_1()
     elif "3" in answer:
         jfk1_2()
@@ -119,9 +135,9 @@ def jfk1_1():
     print("\n\n")
     answer = input("")
 
-    if "1" in answer:
+    if answer == "1":
         jfk_death()
-    elif "2" in answer:
+    elif answer == "2":
         jfk_death()
 
 def jfk1_2():
@@ -150,9 +166,9 @@ def jfk1_2():
     print("\n\n")
     answer = input("")
 
-    if "1" in answer:
+    if answer == "1":
         jfk_death()
-    elif "2" in answer:
+    elif answer == "2":
         jfk_death()
 
 def jfk_death():
@@ -225,9 +241,9 @@ def oswald1_1():
     # take input()
     print("\n\n")
     answer = input()
-    if "1" in answer:
+    if answer == "1":
         oswald_nerves()
-    elif "2" in answer:
+    elif answer == "2":
         oswald_rifle()
 
 def oswald_nerves():
@@ -253,14 +269,12 @@ def oswald_nerves():
     
     print("\n\n")
     answer = input("")
-    if "1" in answer:
+    if answer == "1":
         oswald_shoot()
-    elif "2" in answer:
+    elif answer == "2":
         oswald_panic()
 
 def oswald_panic():
-    
-
     time.sleep(0.5)
     type_writer("You think about how world history is going to pivot around your actions in the next few minutes. You hear the motorcade getting closer. You have a panic attack. Your heart is racing, you are shaking, your arms are tingling, and you feel like you are suffocating.",MAGENTA,0.03)
     sleep(0.5)
@@ -278,13 +292,12 @@ def oswald_panic():
 
     print("\n\n")
     answer = input("")
-    if "1" in answer:
+    if answer == "1":
         oswald_nerves()
-    elif "2" in answer:
+    elif answer == "2":
         oswald_nerves()
 
 def oswald_rifle():
-    
     time.sleep(0.5)
     print("\n\n")
     print("You check over your rifle. it is relatively new, and in good condition. It is loaded and cocked, with the safety on.",MAGENTA,0.03)
@@ -313,16 +326,14 @@ def oswald_rifle():
     print("\n\n")
     answer = input("")
 
-    if "1" in answer:
+    if answer == "1":
         oswald_shoot()
-    elif "2" in answer:
+    elif answer == "2":
         oswald_scope()
 
 def oswald_scope():
-    
     type_writer("You check the scope.",MAGENTA,0.03)
     sleep(0.5)
-
     time.sleep(0.5)
     print("\n\n")
     type_writer("It is a side-mounted 4x18 made by Ordinance Optics. Not exactly top of the line. You wonder why you were provided with this.",MAGENTA,0.03)
@@ -347,16 +358,14 @@ def oswald_scope():
     sleep(0.5)
     print("\n\n")
     answer = input("")
-    if "1" in answer:
+    if answer == "1":
         oswald_abort()
-    elif "2" in answer:
+    elif answer == "2":
         oswald_adjustshot()
     elif "3" in answer:
         oswald_protect()
 
 def oswald_protect():
-   
-    
     time.sleep(0.5)
     print("\n\n")
     type_writer("You decide you aren't going to play by the CIA's rules. You were never the greatest soldier, or the most loyal citizen, but you'll be damned if you're going to be a tool of the CIA",MAGENTA,0.03)
@@ -387,8 +396,6 @@ def oswald_protect():
         oswald_shoot_kill()
 
 def oswald_shootassassin():
-    
-   
     time.sleep(0.5)
     print("\n\n")
     type_writer("You aim at the assassin, as he takes aim at the president. You try to adjust for the scope's being misaligned.",MAGENTA,0.03)
@@ -419,14 +426,12 @@ def oswald_shootassassin():
     sleep(0.5)
     answer=input("")
     print("\n\n")
-    if "1" in answer:
+    if answer == "1":
         michaelstart()
-    elif "2" in answer:
+    elif answer == "2":
         michaelstart()
 
 def oswald_shoot():
-   
- 
     time.sleep(0.5)
     print("\n\n")
     type_writer("The motorcade comes into view. You tuck yourself into the shadows and raise your rifle",MAGENTA,0.03)
@@ -452,14 +457,12 @@ def oswald_shoot():
     sleep(0.5)
     print("\n\n")
     answer = input("")
-    if "1" in answer:
+    if answer == "1":
         oswald_shoot_kill()
-    elif "2" in answer:
+    elif answer == "2":
         oswald_shoot_miss()
 
 def oswald_shoot_kill():
-    
-    
     time.sleep(0.5)
     print("\n\n")
     type_writer("You pull the trigger and the rifle jerks in your hands...",MAGENTA,0.03)
@@ -485,14 +488,12 @@ def oswald_shoot_kill():
     sleep(0.5)
     print("\n\n")
     answer = input("")
-    if "1" in answer:
+    if answer == "1":
         michaelstart()
-    elif "2" in answer:
+    elif answer == "2":
         michaelstart()
 
 def oswald_shoot_miss():
-    
-   
     time.sleep(0.5)
     print("\n\n")
     type_writer("You aim your sights to the side of the motorcade, intending to miss. You don't want to be responsible for this death.",MAGENTA,0.03)
@@ -515,14 +516,12 @@ def oswald_shoot_miss():
     sleep(0.5)
     print("\n\n")
     answer = input("")
-    if "1" in answer:
+    if answer == "1":
         michaelstart()
-    elif "2" in answer:
+    elif answer == "2":
         michaelstart()
 
 def oswald_adjustshot():
-    
-
     time.sleep(0.5)
     print("\n\n")
     type_writer("You finish making your mental adjustments for the scope and fix your sight on the president. You shoot.",MAGENTA,0.03)
@@ -542,9 +541,9 @@ def oswald_adjustshot():
     type_writer("2. Drop the rifle and go.",GREEN, 0.03)
     sleep(0.5)
     answer = input("")
-    if "1" in answer:
+    if answer == "1":
         michaelstart()
-    elif "2" in answer:
+    elif answer == "2":
         michaelstart()
 
 def oswald_abort():
@@ -568,9 +567,9 @@ def oswald_abort():
     sleep(0.5)
     print("\n\n")
     answer = input("")
-    if "1" in answer:
+    if answer == "1":
         michaelstart()
-    elif "2" in answer:
+    elif answer == "2":
         michaelstart()
         
 # The code block below pertains to the 2nd scene: The Escapre by Michael. Subject to changes, text art etc. The code block above has not been modified
@@ -597,9 +596,9 @@ def michaelstart():
     
     print("\n\n")
     answer = input("")
-    if "1" in answer:
+    if answer == "1":
         dep_escape_calm()
-    elif "2" in answer:
+    elif answer == "2":
         dep_escape_run()
     elif "3" in answer: 
         dep_escape_hide()
@@ -618,7 +617,6 @@ def dep_escape_calm():
     sleep(0.5)
     type_writer("You have made it to the exit, continuing on to Dealey Plaza...",MAGENTA,0.03)
     sleep(0.5)
-    print("\n\n")
     the_arrest()
 
 def dep_escape_run():
@@ -635,7 +633,6 @@ def dep_escape_run():
     sleep(0.5)
     type_writer("You are now a person of interest to authorities with a radio transmission sent out for all available units to be on the lookout!",MAGENTA,0.03)
     sleep(0.5)
-    print("\n\n")
     the_arrest()
 
 def dep_escape_hide():
@@ -646,7 +643,6 @@ def dep_escape_hide():
     sleep(0.5)
     type_writer("Once the coast is clear, you calmly make your way down the remaining flights of stairs and make your way through the exit making your way to Dealey Plaza.",MAGENTA,0.03)
     sleep(0.5)
-    print("\n\n")
     the_arrest()
 
 # The code block below pertains to the 3rd scene: The Arrest by Sasha. Subject to changes, text art etc. The code block above has not been modified
@@ -670,21 +666,18 @@ title="THE LEE HARVEY OSWALD RECORD: THE ARREST"
 def the_arrest():
     print("\n\n")
     typewrite(title)
-    print("\n\n")
     dealey_plaza()
 
 def games_over():
     print("\n\n")
     type_writer("GAME OVER!",GREEN, 0.03)
     sleep(0.5)
-    
     play_again()
 
 def game_cleared():
     print("\n\n")
     type_writer("GAME CLEARED!",GREEN, 0.03)
     sleep(0.5)
-
     next_scence()
 
 def next_scence():
@@ -724,11 +717,11 @@ def dealey_plaza():
 
     answer = input("")
 
-    if "1" in answer:
+    if answer == "1":
         bus1()
-    elif "2" in answer:
+    elif answer == "2":
         bus2()
-    elif input != '1' or '2':
+    elif answer != '1' or '2':
         dealey_plaza()
 
 def bus1():
@@ -753,12 +746,11 @@ def bus1():
 
     answer = input("")
 
-    if "1" in answer:
+    if answer == "1":
         transfer1_1()
-    elif "2" in answer:
+    elif answer == "2":
         transfer1_2()
-    elif input != '1' or '2':
-        print
+    elif answer != '1' or '2':
         bus1()
 
 def transfer1_1():
@@ -791,15 +783,15 @@ def bus2():
 
     answer = input("")
 
-    if "1" in answer:
+    if answer == "1":
         transfer2_1()
-    elif "2" in answer:
+    elif answer == "2":
         type_writer("Game Over. The reason for Traffic was a blockade setup by Dallas Police.",MAGENTA,0.03)
         sleep(0.5)
         type_writer("The City Bus you took was raided and the Radio Broadcast instuction was to shoot you on sight.",MAGENTA,0.03)
         sleep(0.5)
         games_over()
-    elif input != '1' or '2':
+    elif answer != '1' or '2':
         bus2()
 
 def transfer2_1():
@@ -835,11 +827,11 @@ def home():
 
     answer = input("")
 
-    if "1" in answer:
+    if answer == "1":
         bus_stop1()
-    elif "2" in answer:
+    elif answer == "2":
         bus_stop2()
-    elif input != '1' or '2':
+    elif answer != '1' or '2':
         home()
 
 def bus_stop1():
@@ -870,21 +862,17 @@ def bus_stop1():
 
     answer = input("")
 
-    if "1" in answer:
-        print
+    if answer == "1":
         type_writer("Dalls Police Officer J. D. Tippit was warning you to dissarm and drop to the ground!",MAGENTA,0.03)
         sleep(0.5)
         type_writer("You were identified from the description broadcasted on State radio...",MAGENTA,0.03)
         sleep(0.5)
         game_cleared()
-    elif "2" in answer:
-        print("")
-
+    elif answer == "2":
         type_writer("You left your gun back at your stay-in. Dallas State Police Officer J. D. Tippit shot you dead.",MAGENTA,0.03)
         sleep(0.5)
         games_over()
-    elif input != '1' or '2':
-        print("")
+    elif answer != '1' or '2':
         bus_stop1()
 
 def bus_stop2():
@@ -915,21 +903,17 @@ def bus_stop2():
 
     answer = input("")
 
-    if "1" in answer:
-        print
+    if answer == "1":
         jd_tippit1()
-    elif "2" in answer:
-        print
+    elif answer == "2":
         jd_tippit2()
-    elif input != '1' or '2':
-        print
+    elif answer != '1' or '2':
         bus_stop2()
 
 def jd_tippit1():
     print("\n\n")
     type_writer("Game Over. Dallas State Officer J. D. Tippit was warning you to dissarm and drop to the ground!",MAGENTA,0.03)
     sleep(0.5)
-    print("\n\n")
     games_over()
 
 def jd_tippit2():
@@ -938,7 +922,7 @@ def jd_tippit2():
     sleep(0.5)
     type_writer("There are no signs of pursuing Police Units so you...",MAGENTA,0.03)
     sleep(0.5)
-    print("")
+    print("\n\n")
     type_writer("1. Look around for witnesses and tie up all loose ends -- the getaway will be clean.",GREEN, 0.03)
     sleep(0.5)
     type_writer("2. Flee. Run as far away from the area as possible. There's a shoe store nearby you can blend in!",GREEN, 0.03)
@@ -947,15 +931,12 @@ def jd_tippit2():
 
     answer = input("")
 
-    if "1" in answer:
-        print
+    if answer == "1":
         shooting1()
-    elif "2" in answer:
-        print
+    elif answer == "2":
         shooting2()
-    elif input != '1' or '2':
-        print
-        jd_tippit2
+    elif answer != '1' or '2':
+        jd_tippit2()
 
 def shooting1():
     print("\n\n")
@@ -969,7 +950,6 @@ def shooting1():
     sleep(0.5)
     type_writer("The Emergency Response Unit watched you across from the across the junction and responded with Leathal Force",MAGENTA,0.03)
     sleep(0.5)
-    print("\n\n")
     games_over()
 
 def shooting2():
@@ -998,21 +978,18 @@ def shooting2():
 
     answer = input("")
 
-    if "1" in answer:
-        print
+    if answer == "1":
         shoe_store1()
-    elif "2" in answer:
+    elif answer == "2":
         shoe_store2()
-    elif input != '1' or '2':
-        print
+    elif answer != '1' or '2':
         shooting2()
 
 def shoe_store1():
     print("\n\n")
     type_writer("Game Over. Jonny could smell the danger off you as soon as you walked in, he shoots you the second you reach for your gun.",MAGENTA,0.03)
     sleep(0.5)
-    print("\n\n")
-    games_over
+    games_over()
 
 def shoe_store2():
     print("\n\n")
@@ -1036,14 +1013,11 @@ def shoe_store2():
 
     answer = input("")
 
-    if "1" in answer:
-        print
+    if answer == "1":
         theatre1()
-    elif "2" in answer:
-        print
+    elif answer == "2":
         theatre2()
-    elif input != '1' or '2':
-        print
+    elif answer != '1' or '2':
         shoe_store2()
 
 def theatre1():
@@ -1052,16 +1026,13 @@ def theatre1():
     sleep(0.5)
     type_writer(" Your Gun jammed up and Police Officer Nick Mcdonals shot you dead",MAGENTA,0.03)
     sleep(0.5)
-    print("\n\n")
-    games_over
+    games_over()
 
 def theatre2():
     print("\n\n")
     type_writer("Game cleared. You are now in custody. You have been baught but you are still alive.",MAGENTA,0.03)
     sleep(0.5)
-    print("\n\n")
     game_cleared()
-    print("\n\n")
 
 #  The code block below pertains to the Ending part: The Interrogation by Sasha, co scripted by James. Subject to changes, text art etc. The above code block above has not been modified
 
@@ -1072,7 +1043,6 @@ def expose_conspiracy():
     print("\n\n")
     type_writer("Welldone. The CIA and FBI Agents failed to implicate you in the assasination.",MAGENTA,0.03)
     sleep(0.5)
-    print("\n\n")
     play_again()
 
 def ending2():
@@ -1082,7 +1052,6 @@ def guilty_conspiracy():
     print("\n\n")
     type_writer("Unfortunately you implicated yourself in the assassination of President J. F. Kennedy.",MAGENTA,0.03)
     sleep(0.5)
-    print("\n\n")
     play_again()
 
 # expose ending tally start point:
@@ -1116,7 +1085,6 @@ def room1():
     sleep(0.5)
     print("\n\n")
     type_writer("The man in front warns you to not bother trying anything stupid...",MAGENTA,0.03)
-    sleep(0.5)
     question1()
 
 def question1():
@@ -1130,11 +1098,11 @@ def question1():
     
     print("\n\n")
     question_1 = input("")
-    if "1" in question_1:
+    if question_1 == "1":
         exposed_conspiracy.append(1)
-    elif "2" in question_1:
+    elif question_1 == "2":
         exposed_conspiracy.append(1)
-    elif "3" in question_1:
+    elif question_1 == "3":
         guilt_conspiracy.append(1)
     else:
         room1()
@@ -1163,11 +1131,11 @@ def question2():
 
     print("\n\n")
     question_2 = input("")
-    if "1" in question_2:
+    if question_2 == "1":
         exposed_conspiracy.append(1)
-    elif "2" in question_2:
+    elif question_2 == "2":
         exposed_conspiracy.append(1)
-    elif "3" in question_2:
+    elif question_2 == "3":
         guilt_conspiracy.append(1)
     else:
         room2()
@@ -1196,11 +1164,11 @@ def question3():
 
     print("\n\n")
     question_3 = input("")
-    if "1" in question_3:
+    if question_3 == "2":
         exposed_conspiracy.append(1)
-    elif "2" in question_3:
+    elif question_3 == "2":
         exposed_conspiracy.append(1)
-    elif "3" in question_3:
+    elif question_3 == "3":
         guilt_conspiracy.append(1)
     else:
         room3()
@@ -1227,11 +1195,11 @@ def question4():
 
     print("\n\n")
     question_4 = input("")
-    if "1" in question_4:
+    if question_4 == "1":
         exposed_conspiracy.append(1)
-    elif "2" in question_4:
+    elif question_4 == "2":
         exposed_conspiracy.append(1)
-    elif "3" in question_4:
+    elif question_4 == "3":
         guilt_conspiracy.append(1)
     else:
         room4()
@@ -1256,11 +1224,11 @@ def question5():
 
     print("\n\n")
     question_5 = input("")
-    if "1" in question_5:
+    if question_5 == "1":
         exposed_conspiracy.append(1)
-    elif "2" in question_5:
+    elif question_5 == "2":
         exposed_conspiracy.append(1)
-    elif "3" in question_5:
+    elif question_5 == "3":
         guilt_conspiracy.append(1)
     else:
         room5()
@@ -1285,11 +1253,11 @@ def question6():
 
     print("\n\n")
     question_6 = input("")
-    if "1" in question_6:
+    if question_6 == "1":
         guilt_conspiracy.append(1)
-    elif "2" in question_6:
+    elif question_6 == "2":
         guilt_conspiracy.append(1)
-    elif "3" in question_6:
+    elif question_6 == "3":
         guilt_conspiracy.append(1)
     else:
         room6()
@@ -1314,11 +1282,11 @@ def question7():
     
     print("\n\n")
     question_7 = input("")
-    if "1" in question_7:
+    if question_7 == "1":
         guilt_conspiracy.append(1)
-    elif "2" in question_7:
+    elif question_7 == "2":
         exposed_conspiracy.append(1)
-    elif "3" in question_7:
+    elif question_7 == "3":
         exposed_conspiracy.append(1)
     else:
         room7()
@@ -1343,11 +1311,11 @@ def question8():
     
     print("\n\n")
     question_8 = input("")
-    if "1" in question_8:
+    if question_8 == "1":
         exposed_conspiracy.append(1)
-    elif "2" in question_8:
+    elif question_8 == "2":
         guilt_conspiracy.append(1)
-    elif "3" in question_8:
+    elif question_8 == "3":
         guilt_conspiracy.append(1)
     else:
         room8()
@@ -1388,11 +1356,11 @@ def question9():
     
     print("\n\n")
     question_9 = input("")
-    if "1" in question_9:
+    if question_9 == "1":
        exposed_conspiracy.append(1)
-    elif "2" in question_9:
+    elif question_9 == "2":
         guilt_conspiracy.append(1)
-    elif "3" in question_9:
+    elif question_9 == "3":
         guilt_conspiracy.append(1)
     else:
         room9()
@@ -1449,11 +1417,11 @@ def question10():
     
     print("\n\n")
     question_10 = input("")
-    if "1" in question_10:
+    if question_10 == "1":
        guilt_conspiracy.append(1)
-    elif "2" in question_10:
+    elif question_10 == "2":
         exposed_conspiracy.append(1)
-    elif "3" in question_10:
+    elif question_10 == "3":
         guilt_conspiracy.append(1)
     else:
         room10()
@@ -1470,15 +1438,12 @@ start_game()
 score_game()
 type_writer("You gave:",MAGENTA,0.03)
 sleep(0.5)
-print("")
-print("")
+print("\n\n")
 print(len(exposed_conspiracy))
-print("")
-print("")
+print("\n\n")
 type_writer("Absolving Responses compared to:",MAGENTA,0.03)
 sleep(0.5)
 print(len(guilt_conspiracy))
-print("")
-print("")
+print("\n\n")
 type_writer("Implicating Responses.",MAGENTA,0.03)
 sleep(0.5)
