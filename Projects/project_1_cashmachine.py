@@ -130,7 +130,7 @@ def check_account():
     type_writer("Checking Your Account Details, Please Wait... \n", MAGENTA, 0.05)
     type_writer("Account Number: {}".format(account_number), MAGENTA, 0.05)
     type_writer("Account Name: {}".format(account_name), MAGENTA, 0.05)
-    type_writer("Account Balance: {}{}{}".format(pound_sign,account_balance,pound_figures))
+    type_writer("Account Balance: {}{}{}".format(pound_sign,account_balance,pound_figures), MAGENTA, 0.05))
     type_writer("Would You Like Another Service? Press Y for Yes or N for No\n",BLUE, 0.05)
     ask_account = input("")
     if ask_account == "y" or "Y":
